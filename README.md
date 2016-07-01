@@ -14,6 +14,7 @@ Could not upload to 'https://*****.pom': HTTP/1.1 400 Bad Request [message:Unabl
 ```
 classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
 classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.4.0"
 ```
 第二步：在你的library module 中的build.gradle文件后面添加
 ```
@@ -45,10 +46,17 @@ DEVELOPER_EMAIL=ibeam@qq.com
 gradlew install
 ```
 如果出现 BUILD SUCCESSFUL,说明成功了一半了，下一步就是上传了，在在Terminal中输入命令
+
+
+执行 gradle bintrayUpload 将库发布到 bintray.com，如果出现 BUILD SUCCESSFUL，说明上传成功了，登录bintray.com，提交到JCenter等待审核就可以了
 ```
 gradlew bintrayUpload
 ```
-如果出现 BUILD SUCCESSFUL，说明上传到bintray.com成功了，登录bintray.com，提交到JCenter等待审核就可以了
+执行 gradle artifactoryPublish 可以发布版本到 oss.jfrog.org.
+```
+gradle artifactoryPublish
+```
+
 
 ##使用格式
 上面的例子最终在Android Studio中的引用形式为：
