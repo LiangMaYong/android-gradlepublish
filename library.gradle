@@ -1,0 +1,24 @@
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = PROJ_NAME
+
+    publishedGroupId = PROJ_GROUP
+    libraryName = PROJ_NAME
+    artifact = PROJ_ARTIFACTID
+
+    libraryDescription = PROJ_DESCRIPTION
+
+    siteUrl = PROJ_WEBSITEURL
+    gitUrl = PROJ_VCSURL
+
+    libraryVersion = PROJ_VERSION
+
+    developerId = DEVELOPER_ID
+    developerName = DEVELOPER_NAME
+    developerEmail = DEVELOPER_EMAIL
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
