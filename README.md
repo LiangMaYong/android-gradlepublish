@@ -32,7 +32,7 @@ PROJ_WEBSITEURL=https://github.com/liangmayong/bintray-demo
 PROJ_VCSURL=git@github.com:liangmayong/bintray-demo.git
 
 #项目介绍
-PROJ_DESCRIPTION=this is android library bintray-demo
+PROJ_DESCRIPTION= this is android library bintray-demo
 #项目artifactId
 PROJ_ARTIFACTID=bintray-demo
 
@@ -42,14 +42,12 @@ DEVELOPER_NAME=Liang Ma Yong
 DEVELOPER_EMAIL=ibeam@qq.com
 ```
 ##编译和上传
-在Terminal中输入命令
+执行 gradlew install 验证编译
 ```
 gradlew install
 ```
-如果出现 BUILD SUCCESSFUL,说明成功了一半了，下一步就是上传了，在在Terminal中输入命令
 
-
-执行 gradle bintrayUpload 将库发布到 bintray.com，如果出现 BUILD SUCCESSFUL，说明上传成功了，登录bintray.com，提交到JCenter等待审核就可以了
+执行 gradlew bintrayUpload 将库发布到 bintray.com
 ```
 gradlew bintrayUpload
 ```
