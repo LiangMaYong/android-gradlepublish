@@ -4,6 +4,14 @@ android library gradle publish 快速度将项目上传到JCenter上
 ##介绍
 本项目包含一些Gradle脚本及属性文件
 
+##账号配置
+首先注册bintray账号，地址：https://bintray.com/ ，账号生成后会自动为你分配一个API Key，账号名以及API Key是我们能够上传库到bintray的钥匙。我们需要将这些信息存到本地，也就是你的系统.gradle目录，这里要注意，我们保存在系统下，而不是你的project下的.gradle目录，如果你没有配置过GRADLE_USER_HOME的环境变量，则是在你的用户目录下，编辑gradle.properties（如果没有则创建），加入配置：
+```
+BINTRAY_USER=*********
+BINTRAY_APIKEY=*******************************
+BINTRAY_GPG_PASSWORD=
+```
+并且你的OS是Windows， 并且是XP，那么一般是在C:\Documents and Settings\用户名\.gradle，而如果是win7以上，那么是在c:\Users\用户名\.gradle。
 ##项目配置
 第一步：在你的root build.gradle文件添加
 ```
@@ -18,11 +26,8 @@ apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradl
 ```
 第三步：在项目gradle.properties中配置
 ```
-BINTRAY_USER=*********
-BINTRAY_APIKEY=*******************************
-BINTRAY_GPG_PASSWORD=
-
-PROJ_GROUP=com.github.liangmayong
+#项目分组
+PROJ_GROUP=com.liangmayong
 #项目名称
 PROJ_NAME=BintrayDemo
 #项目版本
@@ -64,7 +69,7 @@ repositories {
 ......
 
 dependencies {
-    compile 'com.github.liangmayong:bintray-demo:1.0.0'
+    compile 'com.liangmayong:bintray-demo:1.0.0'
 }
 ```
 可以发现，它的格式是 PROJ_GROUP:PROJ_ARTIFACTID:PROJ_VERSION组成。
