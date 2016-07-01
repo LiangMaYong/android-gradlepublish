@@ -10,13 +10,18 @@ android library gradle publish 快速度将项目上传到JCenter上
 Could not upload to 'https://*****.pom': HTTP/1.1 400 Bad Request [message:Unable to upload files: Maven group, artifact or version defined in the pom file do not match the file path '****.pom']
 ```
 ##项目配置
-第一步：在你的library module 中的build.gradle文件后面添加
+第一步：在你的root build.gradle文件添加
+```
+classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
+classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+```
+第二步：在你的library module 中的build.gradle文件后面添加
 ```
 apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradle-publish/master/library.gradle'
 apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradle-publish/master/bintray.gradle'
 apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradle-publish/master/install.gradle'
 ```
-第二步：在项目gradle.properties中配置
+第三步：在项目gradle.properties中配置
 ```
 BINTRAY_USER=*********
 BINTRAY_APIKEY=*******************************
@@ -34,6 +39,7 @@ DEVELOPER_ID=linagmayong
 DEVELOPER_NAME=Liang Ma Yong
 DEVELOPER_EMAIL=ibeam@qq.com
 ```
+##编译和上传
 在Terminal中输入命令
 ```
 gradlew install
