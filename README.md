@@ -64,7 +64,7 @@ dependencies {
 可以发现，它的格式是 PROJ_GROUP:PROJ_ARTIFACTID:PROJ_VERSION组成。
 
 
-##规范说明
+##常见问题
 保持你的library module的名字同artifactId一样，否则会报错
 ```
 Could not upload to 'https://*****.pom': HTTP/1.1 400 Bad Request [message:Unable to upload files: Maven group, artifact or version defined in the pom file do not match the file path '****.pom']
