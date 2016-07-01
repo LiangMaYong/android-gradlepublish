@@ -62,7 +62,7 @@ gradlew bintrayUpload
 ```
 repositories {
     maven {
-        url 'https://dl.bintray.com/{BINTRAY_USER}/maven/'
+        url 'https://dl.bintray.com/liangmayong/maven/'
     }
 }
 
