@@ -23,13 +23,20 @@ BINTRAY_APIKEY=*******************************
 BINTRAY_GPG_PASSWORD=
 
 PROJ_GROUP=com.github.liangmayong
-PROJ_VERSION=1.0.0
+#项目名称
 PROJ_NAME=BintrayDemo
+#项目版本
+PROJ_VERSION=1.0.0
+
 PROJ_WEBSITEURL=https://github.com/liangmayong/bintray-demo
 PROJ_VCSURL=git@github.com:liangmayong/bintray-demo.git
+
+#项目介绍
 PROJ_DESCRIPTION=this is android library bintray-demo
+#项目artifactId
 PROJ_ARTIFACTID=bintray-demo
 
+#开发者信息
 DEVELOPER_ID=linagmayong
 DEVELOPER_NAME=Liang Ma Yong
 DEVELOPER_EMAIL=ibeam@qq.com
