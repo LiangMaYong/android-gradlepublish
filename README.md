@@ -55,6 +55,14 @@ gradlew bintrayUpload
 ##使用格式
 上面的例子最终在Android Studio中的引用形式为：
 ```
+repositories {
+    maven {
+        url 'https://dl.bintray.com/{BINTRAY_USER}/maven/'
+    }
+}
+
+......
+
 dependencies {
     compile 'com.github.liangmayong:bintray-demo:1.0.0'
 }
