@@ -4,11 +4,6 @@ android library gradle publish 快速度将项目上传到JCenter上
 ##介绍
 本项目包含一些Gradle脚本及属性文件
 
-##规范说明
-保持你的library module的名字同artifactId一样，否则会报错
-```
-Could not upload to 'https://*****.pom': HTTP/1.1 400 Bad Request [message:Unable to upload files: Maven group, artifact or version defined in the pom file do not match the file path '****.pom']
-```
 ##项目配置
 第一步：在你的root build.gradle文件添加
 ```
@@ -60,6 +55,13 @@ dependencies {
 }
 ```
 可以发现，它的格式是 PROJ_GROUP:PROJ_ARTIFACTID:PROJ_VERSION组成。
+
+
+##规范说明
+保持你的library module的名字同artifactId一样，否则会报错
+```
+Could not upload to 'https://*****.pom': HTTP/1.1 400 Bad Request [message:Unable to upload files: Maven group, artifact or version defined in the pom file do not match the file path '****.pom']
+```
 
 
 
