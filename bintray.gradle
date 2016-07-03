@@ -30,10 +30,12 @@ artifacts {
 }
 
 // Bintray
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 bintray {
-    user = BINTRAY_USER
-    key = BINTRAY_APIKEY
+    user = properties.getProperty("BINTRAY_USER")
+    key = properties.getProperty("BINTRAY_APIKEY")
 
     configurations = ['archives']
     pkg {
@@ -49,7 +51,7 @@ bintray {
             desc = libraryDescription
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
-                passphrase = BINTRAY_GPG_PASSWORD
+                passphrase = properties.getProperty("BINTRAY_GPG_PASSWORD")
                 //Optional. The passphrase for GPG signing'
             }
         }
