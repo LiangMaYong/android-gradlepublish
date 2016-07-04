@@ -7,6 +7,11 @@ if (project.hasProperty("android")) { // Android libraries
         classifier = 'sources'
         from android.sourceSets.main.java.srcDirs
     }
+    task javadoc(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    }
+    
 } else { // Java libraries
     task sourcesJar(type: Jar, dependsOn: classes) {
         classifier = 'sources'
