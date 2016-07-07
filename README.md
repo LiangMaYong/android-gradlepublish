@@ -75,6 +75,10 @@ dependencies {
 ```
 可以发现，它的格式是 PROJ_GROUP:PROJ_ARTIFACTID:PROJ_VERSION组成。
 
+##技术交流
+QQGroup：297798093
+
+email：ibeam@qq.com
 
 ##常见问题
 保持你的library module的名字同artifactId一样，否则会报错
