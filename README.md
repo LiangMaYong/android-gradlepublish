@@ -1,5 +1,5 @@
-# android-library-gradle-publish
-android library gradle publish 快速度将项目上传到JCenter上
+# android-gradlepublish
+android gradlepublish 快速度将项目上传到JCenter上
 
 ##介绍
 本项目包含一些Gradle脚本及属性文件
@@ -21,9 +21,9 @@ classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
 ```
 第二步：在你的library module 中的build.gradle文件后面添加
 ```
-apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradle-publish/master/library.gradle'
-apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradle-publish/master/bintray.gradle'
-apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-library-gradle-publish/master/install.gradle'
+apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-gradlepublish/master/library.gradle'
+apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-gradlepublish/master/bintray.gradle'
+apply from: 'https://raw.githubusercontent.com/LiangMaYong/android-gradlepublish/master/install.gradle'
 ```
 第三步：在项目gradle.properties中配置
 ```
@@ -67,18 +67,15 @@ repositories {
     }
 }
 
-......
+...
+
+...
 
 dependencies {
     compile 'com.liangmayong:bintray-demo:1.0.0'
 }
 ```
 可以发现，它的格式是 PROJ_GROUP:PROJ_ARTIFACTID:PROJ_VERSION组成。
-
-##技术交流
-QQGroup：297798093
-
-email：ibeam@qq.com
 
 ##常见问题
 保持你的library module的名字同artifactId一样，否则会报错
