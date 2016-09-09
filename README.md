@@ -48,10 +48,17 @@ DEVELOPER_NAME=Liang Ma Yong
 DEVELOPER_EMAIL=ibeam@qq.com
 
 
-#开源协议
+#开源协议[Apache-2.0]
 PROJ_ALL_LICENSE=["Apache-2.0"]
 PROJ_LICENSE_NAME=The Apache Software License, Version 2.0
 PROJ_LICENSE_URL=http://www.apache.org/licenses/LICENSE-2.0.txt
+```
+MIT协议
+```
+#开源协议[MIT]
+PROJ_ALL_LICENSE=["MIT"]
+PROJ_LICENSE_NAME=The MIT License (MIT)
+PROJ_LICENSE_URL=https://raw.githubusercontent.com/LiangMaYong/android-gradlepublish/master/MIT.txt
 ```
 ##编译和上传
 执行 gradlew install 验证编译
