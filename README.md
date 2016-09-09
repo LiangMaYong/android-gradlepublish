@@ -5,7 +5,7 @@ android gradlepublish 快速度将项目上传到JCenter上
 本项目包含一些Gradle脚本及属性文件
 
 ##账号配置
-首先注册bintray账号，地址：https://bintray.com/ ，账号生成后会自动为你分配一个API Key，账号名以及API Key是我们能够上传库到bintray的钥匙。
+首先注册bintray账号，地址：https://bintray.com/ ，账号生成后会自动为你分配一个API Key，账号名以及API Key是我们能够上传库到bintray的钥匙。注意：如果Bintray没有为你创建Maven仓库，需要手动创建。
 
 我们需要将这些信息存到local.properties：
 ```
