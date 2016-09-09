@@ -18,6 +18,7 @@ ext {
     developerName = DEVELOPER_NAME
     developerEmail = DEVELOPER_EMAIL
 
+    allLicenses = PROJ_ALL_LICENSE
     licenseName = PROJ_LICENSE_NAME
     licenseUrl = PROJ_LICENSE_URL
 }
