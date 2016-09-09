@@ -50,8 +50,8 @@ DEVELOPER_EMAIL=ibeam@qq.com
 
 #开源协议
 PROJ_ALL_LICENSE=["Apache-2.0"]
-PROJ_LICENSE_NAME='The Apache Software License, Version 2.0'
-PROJ_LICENSE_URL='http://www.apache.org/licenses/LICENSE-2.0.txt'
+PROJ_LICENSE_NAME=The Apache Software License, Version 2.0
+PROJ_LICENSE_URL=http://www.apache.org/licenses/LICENSE-2.0.txt
 ```
 ##编译和上传
 执行 gradlew install 验证编译
