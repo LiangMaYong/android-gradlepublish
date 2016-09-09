@@ -33,6 +33,10 @@ PROJ_GROUP=com.liangmayong
 PROJ_NAME=BintrayDemo
 #项目版本
 PROJ_VERSION=1.0.0
+#开源协议类型
+PROJ_LICENSE_NAME=The Apache Software License, Version 2.0
+#开源协议地址
+PROJ_LICENSE_URL=http://www.apache.org/licenses/LICENSE-2.0.txt
 
 PROJ_WEBSITEURL=https://github.com/liangmayong/bintray-demo
 PROJ_VCSURL=git@github.com:liangmayong/bintray-demo.git
