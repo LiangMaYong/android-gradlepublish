@@ -33,10 +33,6 @@ PROJ_GROUP=com.liangmayong
 PROJ_NAME=BintrayDemo
 #项目版本
 PROJ_VERSION=1.0.0
-#开源协议类型
-PROJ_LICENSE_NAME=The Apache Software License, Version 2.0
-#开源协议地址
-PROJ_LICENSE_URL=http://www.apache.org/licenses/LICENSE-2.0.txt
 
 PROJ_WEBSITEURL=https://github.com/liangmayong/bintray-demo
 PROJ_VCSURL=git@github.com:liangmayong/bintray-demo.git
@@ -50,6 +46,12 @@ PROJ_ARTIFACTID=bintray-demo
 DEVELOPER_ID=linagmayong
 DEVELOPER_NAME=Liang Ma Yong
 DEVELOPER_EMAIL=ibeam@qq.com
+
+
+#开源协议
+PROJ_ALL_LICENSE=["Apache-2.0"]
+PROJ_LICENSE_NAME='The Apache Software License, Version 2.0'
+PROJ_LICENSE_URL='http://www.apache.org/licenses/LICENSE-2.0.txt'
 ```
 ##编译和上传
 执行 gradlew install 验证编译
